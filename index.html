@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARONOV & CO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #fff;
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      border: 1px solid #000;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    a.button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      } to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.875rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ARONOV & CO</h1>
+    <p>Minimal. Powerful. Provocative.<br>More than fashion — it's a mindset.</p>
+    <a href="#" class="button">Enter Store</a>
+  </header>
+
+  <footer>
+    &copy; 2025 ARONOV & CO. All rights reserved.
+  </footer>
+
+</body>
+</html>
